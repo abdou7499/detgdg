@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>grab</title></head>
+<body style="margin:0;background:#000;color:#fff;font:12px monospace">
+<p id="status">loading…</p>
+<video id="v" src="_vid2.mp4" muted playsinline style="width:320px;display:block"></video>
+<script>
+const v = document.getElementById('v');
+const status = document.getElementById('status');
+function ready() {
+  return new Promise((r) => (v.readyState >= 1 ? r() : v.addEventListener('loadedmetadata', r, { once: true })));
+}
+function whenFrame(cb) {
+  if (v.requestVideoFrameCallback) v.requestVideoFrameCallback(cb);
+  else setTimeout(cb, 150);
+}
+function seek(t) {
+  return new Promise((resolve) => {
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+    setTimeout(finish, 2500);
+    if (Math.abs(v.currentTime - t) < 0.02) {
+      whenFrame(finish);
+      return;
+    }
+    v.addEventListener('seeked', () => whenFrame(finish), { once: true });
+    v.currentTime = t;
+  });
+}
+window.__grab = async function () {
+  await ready();
+  const dur = v.duration;
+  const count = 12;
+  const cols = 4;
+  const fw = 320;
+  const fh = Math.round((320 * v.videoHeight) / v.videoWidth);
+  const rows = Math.ceil(count / cols);
+  const c = document.createElement('canvas');
+  c.width = cols * fw;
+  c.height = rows * fh;
+  const ctx = c.getContext('2d');
+  for (let i = 0; i < count; i += 1) {
+    const t = (i / (count - 1)) * (dur - 0.08);
+    await seek(t);
+    const x = (i % cols) * fw;
+    const y = Math.floor(i / cols) * fh;
+    ctx.drawImage(v, x, y, fw, fh);
+    ctx.fillStyle = 'rgba(0,0,0,.66)';
+    ctx.fillRect(x + 4, y + 4, 54, 17);
+    ctx.fillStyle = '#e8b84b';
+    ctx.font = '11px monospace';
+    ctx.fillText(t.toFixed(2) + 's', x + 8, y + 16);
+  }
+  const url = c.toDataURL('image/jpeg', 0.85);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'strip2.jpg';
+  document.body.appendChild(a);
+  a.click();
+  status.textContent = 'grabbed ' + c.width + 'x' + c.height;
+  return { dur: dur, w: c.width, h: c.height, data: url.length };
+};
+</script>
+</body></html>

@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gears DZ — Automobiles de prestige &amp; motos d'exception en Algérie</title>
+  <meta name="description" content="Showroom automobile premium à Alger. BMW, Mercedes-AMG, Audi, Porsche, Volkswagen, Yamaha et Honda. Véhicules inspectés, financement et livraison dans les 58 wilayas.">
+  <meta name="theme-color" content="#080A08">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gears DZ — L'exception se conduit.">
+  <meta property="og:description" content="Voitures de prestige et motos d'exception, sélectionnées et livrées partout en Algérie.">
+  <meta property="og:image" content="assets/img/hero-amg-gt.jpg">
+  <meta property="og:locale" content="fr_DZ">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero-amg-gt.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/styles.css?v=5">
+  <link rel="stylesheet" href="assets/css/identity.css?v=5">
+  <noscript><style>#preloader,.cursor-ring,.cursor-dot{display:none !important}</style></noscript>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("gearsdz:lang");
+        if (saved === "ar" || saved === "fr") {
+          document.documentElement.lang = saved;
+          document.documentElement.dir = saved === "ar" ? "rtl" : "ltr";
+        }
+      } catch (error) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Gears DZ",
+    "description": "Showroom premium d'automobiles et de motos à Alger. BMW, Mercedes-AMG, Audi, Porsche, Volkswagen, Yamaha et Honda.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12, rue des Frères Benhafid, Hydra",
+      "addressLocality": "Alger",
+      "postalCode": "16000",
+      "addressCountry": "DZ"
+    },
+    "telephone": "+213561248890",
+    "email": "contact@gears-dz.com",
+    "priceRange": "$$$",
+    "areaServed": "Algérie",
+    "openingHours": ["Sa-Th 09:00-19:00", "Fr 14:00-19:00"],
+    "sameAs": [
+      "https://www.instagram.com/gearsdz",
+      "https://www.facebook.com/gearsdz"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-top">
+        <span class="preloader-label" data-fr="Session showroom" data-ar="جلسة المعرض">Session showroom</span>
+        <span class="preloader-coords">HYDRA · 36.7538° N — 3.0588° E</span>
+      </div>
+      <div class="preloader-brand">GEARS<em>DZ</em></div>
+      <div class="preloader-readout"><span id="preloaderValue">000</span><small>KM/H</small></div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-foot">
+        <span id="preloaderStage" data-fr="Initialisation du showroom" data-ar="تهيئة المعرض">Initialisation du showroom</span>
+        <span>EST. 2014</span>
+      </div>
+    </div>
+  </div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-fr="Aller au contenu" data-ar="انتقل إلى المحتوى">Aller au contenu</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 4h13v12H1zM14 9h4l3 3v4h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h3"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8M16 4l3 3M14 6l3 3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 3.5a11.7 11.7 0 0 0-18 14.1L1 23l5.6-1.5A11.7 11.7 0 1 0 20.5 3.5Z"/><path d="M8.1 6.9c-.2-.5-.5-.5-.8-.5h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.8 5.9 5.2 2.9 1.2 3.5 1 4.1.9.6-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.3l-2.1-1c-.3-.1-.5-.2-.7.1l-1 1.2c-.2.2-.4.3-.7.1-.3-.1-1.2-.4-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.4Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></symbol>
+    <symbol id="i-speed" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 14 4-4"/><path d="M5 18h14"/></symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Gears DZ — Accueil" data-fr-aria="Gears DZ — Accueil" data-ar-aria="Gears DZ — الرئيسية">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+            <circle cx="20" cy="20" r="10.5"/>
+            <path d="M20 3.5v6M20 30.5v6M3.5 20h6M30.5 20h6M8.3 8.3l4.2 4.2M27.5 27.5l4.2 4.2M31.7 8.3l-4.2 4.2M12.5 27.5l-4.2 4.2"/>
+          </g>
+          <circle cx="20" cy="20" r="3.4" fill="currentColor"/>
+        </svg>
+        <span class="brand-word">GEARS<em>DZ</em></span>
+      </a>
+
+      <nav class="nav-pill" aria-label="Navigation principale" data-fr-aria="Navigation principale" data-ar-aria="التنقل الرئيسي">
+        <a class="nav-link" href="#collection" data-fr="Collection" data-ar="المجموعة">Collection</a>
+        <a class="nav-link" href="#motos" data-fr="Motos" data-ar="الدراجات">Motos</a>
+        <a class="nav-link" href="#maison" data-fr="La Maison" data-ar="المعرض">La Maison</a>
+        <a class="nav-link" href="#financement" data-fr="Financement" data-ar="التمويل">Financement</a>
+        <a class="nav-link" href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Langue / اللغة">
+          <button class="lang-btn is-active" type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-btn" type="button" data-lang="ar" aria-pressed="false">ع</button>
+        </div>
+        <button class="fav-link" id="favLink" type="button" aria-label="Voir mes favoris" data-fr-aria="Voir mes favoris" data-ar-aria="عرض المفضلة">
+          <svg class="icon"><use href="#i-heart"/></svg>
+          <span class="fav-count" id="favCount">0</span>
+        </button>
+        <a class="btn btn-gold btn-sm header-cta" href="#contact"><span data-fr="Prendre rendez-vous" data-ar="احجز موعدًا">Prendre rendez-vous</span><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" data-fr-aria="Ouvrir le menu" data-ar-aria="افتح القائمة">
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <dialog class="menu-dialog" id="menuDialog" aria-labelledby="menuTitle">
+    <div class="menu-shell">
+      <div class="menu-head">
+        <a class="brand" href="#accueil" data-menu-close>
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+              <circle cx="20" cy="20" r="10.5"/>
+              <path d="M20 3.5v6M20 30.5v6M3.5 20h6M30.5 20h6M8.3 8.3l4.2 4.2M27.5 27.5l4.2 4.2M31.7 8.3l-4.2 4.2M12.5 27.5l-4.2 4.2"/>
+            </g>
+            <circle cx="20" cy="20" r="3.4" fill="currentColor"/>
+          </svg>
+          <span class="brand-word">GEARS<em>DZ</em></span>
+        </a>
+        <button class="icon-btn" id="menuClose" type="button" aria-label="Fermer le menu" data-fr-aria="Fermer le menu" data-ar-aria="أغلق القائمة"><svg class="icon"><use href="#i-close"/></svg></button>
+      </div>
+      <nav class="menu-nav" id="menuTitle">
+        <a href="#collection" data-menu-close><span>01</span><b data-fr="Collection" data-ar="المجموعة">Collection</b><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+        <a href="#motos" data-menu-close><span>02</span><b data-fr="Motos" data-ar="الدراجات">Motos</b><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+        <a href="#maison" data-menu-close><span>03</span><b data-fr="La Maison" data-ar="المعرض">La Maison</b><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+        <a href="#financement" data-menu-close><span>04</span><b data-fr="Financement" data-ar="التمويل">Financement</b><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+        <a href="#contact" data-menu-close><span>05</span><b data-fr="Contact" data-ar="اتصل بنا">Contact</b><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></a>
+      </nav>
+      <div class="menu-foot">
+        <div class="menu-foot-contact">
+          <a href="tel:+213561248890">+213 561 24 88 90</a>
+          <a href="mailto:contact@gears-dz.com">contact@gears-dz.com</a>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Langue / اللغة">
+          <button class="lang-btn is-active" type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-btn" type="button" data-lang="ar" aria-pressed="false">ع</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <section class="hero" id="accueil">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/img/hero-amg-gt.jpg" alt="Mercedes-AMG GT jaune dans le showroom Gears DZ" width="2400" height="1084" fetchpriority="high" data-fr-alt="Mercedes-AMG GT jaune dans le showroom Gears DZ" data-ar-alt="Mercedes-AMG GT صفراء في معرض Gears DZ">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-callouts" aria-hidden="true">
+        <span class="callout" style="--cx: 56%; --cy: 30%"><i></i><b data-fr="4.0 L V8 BITURBO" data-ar="4.0 لتر V8 بتيربو">4.0 L V8 BITURBO</b></span>
+        <span class="callout" style="--cx: 74%; --cy: 45%"><i></i><b data-fr="843 CH" data-ar="843 حصان">843 CH</b></span>
+        <span class="callout" style="--cx: 62%; --cy: 63%"><i></i><b data-fr="0–100 · 2,9 S" data-ar="0–100 · 2.9 ث">0–100 · 2,9 S</b></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-tag"><span class="dz-badge">DZ</span><span class="hero-tag-line" data-fr="Showroom premium · Alger, Algérie" data-ar="معرض فاخر · الجزائر العاصمة">Showroom premium · Alger, Algérie</span></p>
+          <h1 class="hero-title display">
+            <span data-fr="L'EXCEPTION" data-ar="الاستثناء">L'EXCEPTION</span>
+            <span class="outline" data-fr="SE CONDUIT." data-ar="لا ينتظر.">SE CONDUIT.</span>
+          </h1>
+          <p class="hero-sub" data-fr="BMW, Mercedes-AMG, Audi, Porsche, Volkswagen — et les deux-roues les plus désirables. Une sélection rare, inspectée sur 150 points et livrée partout en Algérie." data-ar="BMW وMercedes-AMG وAudi وPorsche وVolkswagen — وأكثر الدراجات المرغوبة. مجموعة نادرة، مفحوصة على 150 نقطة وتُسلَّم في كل الجزائر.">BMW, Mercedes-AMG, Audi, Porsche, Volkswagen — et les deux-roues les plus désirables. Une sélection rare, inspectée sur 150 points et livrée partout en Algérie.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#collection"><span data-fr="Explorer la collection" data-ar="اكتشف المجموعة">Explorer la collection</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-outline" href="#contact" data-prefill-type="Essai"><span data-fr="Réserver un essai" data-ar="احجز تجربة قيادة">Réserver un essai</span></a>
+          </div>
+          <p class="hero-note"><svg class="icon"><use href="#i-check"/></svg><span data-fr="Livraison 58 wilayas · Garantie 24 mois" data-ar="توصيل 58 ولاية · ضمان 24 شهرًا">Livraison 58 wilayas · Garantie 24 mois</span></p>
+        </div>
+
+        <aside class="hero-feature">
+          <div class="feature-head"><span class="micro" data-fr="À la une" data-ar="مميزة">À la une</span><span class="feature-index">01</span></div>
+          <p class="feature-brand">Mercedes-AMG</p>
+          <h2 class="feature-name">GT 63 S</h2>
+          <p class="feature-specs" data-fr="4.0 V8 Biturbo · 843 ch · 0–100 2,9 s" data-ar="4.0 V8 Biturbo · 843 حصان · 0–100 في 2.9 ث">4.0 V8 Biturbo · 843 ch · 0–100 2,9 s</p>
+          <div class="feature-foot">
+            <span class="feature-price" data-price="38500000">38 500 000 DA</span>
+            <button class="circle-link" type="button" data-open="amg-gt" aria-label="Voir la fiche technique" data-fr-aria="Voir la fiche technique" data-ar-aria="عرض المواصفات"><svg class="icon icon-arrow"><use href="#i-arrow-up"/></svg></button>
+          </div>
+        </aside>
+      </div>
+      <div class="container hero-bottom">
+        <a class="scroll-cue" href="#collection"><span class="scroll-line" aria-hidden="true"></span><span data-fr="Défiler pour explorer" data-ar="مرّر للاستكشاف">Défiler pour explorer</span></a>
+        <div class="hero-gauge" aria-hidden="true">
+          <svg viewBox="0 0 150 84">
+            <path class="gauge-track" d="M14 76 A61 61 0 0 1 136 76"/>
+            <path class="gauge-ticks" d="M14 76 A61 61 0 0 1 136 76"/>
+            <g class="gauge-needle" id="heroNeedle"><line x1="75" y1="76" x2="75" y2="26"/></g>
+            <circle class="gauge-hub" cx="75" cy="76" r="4.5"/>
+          </svg>
+          <div class="gauge-readout"><span id="heroGaugeValue">000</span><small>KM/H</small></div>
+        </div>
+        <div class="hero-meta"><span>Hydra, Alger</span><span class="meta-dot"></span><span>36.7538° N · 3.0588° E</span></div>
+        <span class="hero-index">01 / 08</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-set">
+          <span class="tk"><b>BMW M4 COMPETITION</b><i>18 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>جيرز دي زد</b><i>الجزائر</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>MERCEDES-AMG GT 63 S</b><i>38 500 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>PORSCHE 911 CARRERA S</b><i>32 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>٥٨ ولاية</b><i>توصيل شامل</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>AUDI RS6 AVANT</b><i>24 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>YAMAHA TMAX 560</b><i>3 190 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>BMW M 1000 RR</b><i>6 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>VW GOLF GTI CLUBSPORT</b><i>9 450 000 DA</i></span><span class="tk-sep"></span>
+        </div>
+        <div class="ticker-set" aria-hidden="true">
+          <span class="tk"><b>BMW M4 COMPETITION</b><i>18 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>جيرز دي زد</b><i>الجزائر</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>MERCEDES-AMG GT 63 S</b><i>38 500 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>PORSCHE 911 CARRERA S</b><i>32 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>٥٨ ولاية</b><i>توصيل شامل</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>AUDI RS6 AVANT</b><i>24 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>YAMAHA TMAX 560</b><i>3 190 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk is-ar"><b>BMW M 1000 RR</b><i>6 900 000 DA</i></span><span class="tk-sep"></span>
+          <span class="tk"><b>VW GOLF GTI CLUBSPORT</b><i>9 450 000 DA</i></span><span class="tk-sep"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="stats" aria-label="Gears DZ en chiffres" data-fr-aria="Gears DZ en chiffres" data-ar-aria="Gears DZ بالأرقام">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat-number"><span data-count="1200">0</span><em>+</em></span>
+          <span class="stat-label" data-fr="Véhicules livrés" data-ar="سيارة تم تسليمها">Véhicules livrés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number"><span data-count="58">0</span></span>
+          <span class="stat-label" data-fr="Wilayas couvertes" data-ar="ولاية مغطاة">Wilayas couvertes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number"><span data-count="24">0</span></span>
+          <span class="stat-label" data-fr="Mois de garantie" data-ar="شهر ضمان">Mois de garantie</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number"><span data-count="150">0</span></span>
+          <span class="stat-label" data-fr="Points d'inspection" data-ar="نقطة فحص">Points d'inspection</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="brand-marquee" aria-label="Marques disponibles" data-fr-aria="Marques disponibles" data-ar-aria="العلامات المتوفرة">
+      <div class="marquee-label"><span data-fr="Marques" data-ar="علامات">Marques</span><span data-fr="officielles" data-ar="رسمية">officielles</span></div>
+      <div class="marquee-viewport">
+        <div class="marquee-track">
+          <div class="marquee-set">
+            <span class="marquee-item"><b>BMW</b><i>M</i><em>✦</em></span>
+            <span class="marquee-item"><b>MERCEDES-AMG</b><i>63</i><em>✦</em></span>
+            <span class="marquee-item"><b>AUDI</b><i>RS</i><em>✦</em></span>
+            <span class="marquee-item"><b>PORSCHE</b><i>911</i><em>✦</em></span>
+            <span class="marquee-item"><b>VOLKSWAGEN</b><i>GTI</i><em>✦</em></span>
+            <span class="marquee-item"><b>YAMAHA</b><i>MT</i><em>✦</em></span>
+            <span class="marquee-item"><b>HONDA</b><i>ADV</i><em>✦</em></span>
+          </div>
+          <div class="marquee-set" aria-hidden="true">
+            <span class="marquee-item"><b>BMW</b><i>M</i><em>✦</em></span>
+            <span class="marquee-item"><b>MERCEDES-AMG</b><i>63</i><em>✦</em></span>
+            <span class="marquee-item"><b>AUDI</b><i>RS</i><em>✦</em></span>
+            <span class="marquee-item"><b>PORSCHE</b><i>911</i><em>✦</em></span>
+            <span class="marquee-item"><b>VOLKSWAGEN</b><i>GTI</i><em>✦</em></span>
+            <span class="marquee-item"><b>YAMAHA</b><i>MT</i><em>✦</em></span>
+            <span class="marquee-item"><b>HONDA</b><i>ADV</i><em>✦</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section collection on-light" id="collection">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow" data-fr="01 — La collection" data-ar="01 — المجموعة">01 — La collection</span>
+            <h2 class="display" data-fr-html="CHOISISSEZ<br>VOTRE TERRAIN." data-ar-html="اختر<br>ميدانك.">CHOISISSEZ<br>VOTRE TERRAIN.</h2>
+          </div>
+          <div class="section-intro">
+            <p id="collectionIntro" data-fr="Dix modèles, cinq marques, une même exigence : l'excellence mécanique. Chaque véhicule est inspecté, documenté et prêt à prendre la route." data-ar="عشرة موديلات، خمس علامات، ومطلب واحد: التميّز الميكانيكي. كل سيارة مفحوصة وموثّقة وجاهزة للطريق.">Cinquante-trois modèles, cinq marques, une même exigence : l'excellence mécanique. Chaque véhicule est inspecté, documenté et prêt à prendre la route.</p>
+            <span class="collection-count"><span id="carCount">53</span> <span data-fr="modèles" data-ar="موديلات">modèles</span></span>
+          </div>
+        </div>
+
+        <div class="filters reveal" id="filters" role="group" aria-label="Filtrer la collection" data-fr-aria="Filtrer la collection" data-ar-aria="تصفية المجموعة">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true"><span data-fr="Tout" data-ar="الكل">Tout</span><sup data-count-filter="all">53</sup></button>
+          <button class="filter-btn" type="button" data-filter="BMW" aria-pressed="false">BMW<sup data-count-filter="BMW">13</sup></button>
+          <button class="filter-btn" type="button" data-filter="Mercedes-AMG" aria-pressed="false"><span data-fr="Mercedes" data-ar="مرسيدس">Mercedes</span><sup data-count-filter="Mercedes-AMG">13</sup></button>
+          <button class="filter-btn" type="button" data-filter="Audi" aria-pressed="false">Audi<sup data-count-filter="Audi">10</sup></button>
+          <button class="filter-btn" type="button" data-filter="Porsche" aria-pressed="false">Porsche<sup data-count-filter="Porsche">9</sup></button>
+          <button class="filter-btn" type="button" data-filter="Volkswagen" aria-pressed="false">Volkswagen<sup data-count-filter="Volkswagen">8</sup></button>
+          <button class="filter-btn filter-fav" type="button" data-filter="fav" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg><span data-fr="Favoris" data-ar="المفضلة">Favoris</span><sup id="favFilterCount">0</sup></button>
+        </div>
+
+      </div>
+
+      <div class="rail" id="carRail">
+        <div class="rail-sticky">
+          <div class="rail-bar">
+            <span class="rail-hint"><svg class="icon rail-hint-icon" aria-hidden="true"><use href="#i-arrow"/></svg><span data-fr="Faites défiler ou utilisez les flèches" data-ar="اسحب المجموعة أو استعمل الأسهم">Faites défiler ou utilisez les flèches</span></span>
+            <span class="rail-meta">
+              <span class="rail-nav">
+                <button class="rail-nav-btn is-prev" type="button" id="carRailPrev" aria-label="Précédent" data-fr-aria="Véhicule précédent" data-ar-aria="السيارة السابقة"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+                <button class="rail-nav-btn" type="button" id="carRailNext" aria-label="Suivant" data-fr-aria="Véhicule suivant" data-ar-aria="السيارة التالية"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </span>
+              <span class="rail-counter"><b id="carRailIndex">01</b><i>/</i><span id="carRailTotal">53</span></span>
+            </span>
+          </div>
+          <div class="rail-viewport"><div class="rail-track" id="carGrid"></div></div>
+          <div class="rail-progress" aria-hidden="true"><span id="carRailProgress"></span></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="empty-state" id="favEmpty" hidden>
+          <svg class="icon"><use href="#i-heart"/></svg>
+          <h3 data-fr="Aucun favori pour le moment." data-ar="لا توجد مفضلات بعد.">Aucun favori pour le moment.</h3>
+          <p data-fr="Touchez le cœur d'un véhicule pour le retrouver ici." data-ar="اضغط على القلب لحفظ أي سيارة هنا.">Touchez le cœur d'un véhicule pour le retrouver ici.</p>
+          <button class="btn btn-dark btn-sm" type="button" data-filter-reset><span data-fr="Voir toute la collection" data-ar="عرض كل المجموعة">Voir toute la collection</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></button>
+        </div>
+        <p class="fine-print" data-fr="Prix TTC indicatifs, hors options. Disponibilité et délais confirmés à la commande." data-ar="أسعار إرشادية شاملة الرسوم، دون الإضافات. التوفر والمدد تُؤكَّد عند الطلب.">Prix TTC indicatifs, hors options. Disponibilité et délais confirmés à la commande.</p>
+      </div>
+    </section>
+
+    <section class="section motos" id="motos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow" data-fr="02 — Deux-roues" data-ar="02 — الدراجات">02 — Deux-roues</span>
+            <h2 class="display" data-fr-html="LA VILLE N'EST<br>QU'UN DÉPART." data-ar-html="المدينة ليست<br>سوى البداية.">LA VILLE N'EST<br>QU'UN DÉPART.</h2>
+          </div>
+          <div class="section-intro">
+            <p id="motosIntro" data-fr="MT-07, X-ADV, TMAX. Trois tempéraments, une même envie d'ailleurs. Des machines prêtes à avaler l'asphalte algérien." data-ar="MT-07 وX-ADV وTMAX. ثلاثة أمزجة، ورغبة واحدة في الرحيل. آلات جاهزة لالتهام أسفلت الجزائر.">Du naked au maxi-scooter : treize machines, quatre caractères et une même envie d'ailleurs.</p>
+            <a class="text-link" href="#contact" data-prefill-type="Essai"><span data-fr="Essayer une moto" data-ar="جرّب دراجة">Essayer une moto</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="filters reveal" id="motoFilters" role="group" aria-label="Filtrer les deux-roues" data-fr-aria="Filtrer les deux-roues" data-ar-aria="تصفية الدراجات">
+          <button class="filter-btn is-active" type="button" data-moto-filter="all" aria-pressed="true"><span data-fr="Tout" data-ar="الكل">Tout</span><sup data-moto-count="all">13</sup></button>
+          <button class="filter-btn" type="button" data-moto-filter="naked" aria-pressed="false"><span data-fr="Naked" data-ar="نيكد">Naked</span><sup data-moto-count="naked">4</sup></button>
+          <button class="filter-btn" type="button" data-moto-filter="sport" aria-pressed="false"><span data-fr="Sport" data-ar="سبورت">Sport</span><sup data-moto-count="sport">2</sup></button>
+          <button class="filter-btn" type="button" data-moto-filter="racing" aria-pressed="false"><span data-fr="Race" data-ar="ريس">Race</span><sup data-moto-count="racing">3</sup></button>
+          <button class="filter-btn" type="button" data-moto-filter="scooter" aria-pressed="false"><span data-fr="Scooters" data-ar="سكوترات">Scooters</span><sup data-moto-count="scooter">4</sup></button>
+          <button class="filter-btn filter-fav" type="button" data-moto-filter="fav" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg><span data-fr="Favoris" data-ar="المفضلة">Favoris</span><sup id="motoFavCount">0</sup></button>
+        </div>
+      </div>
+
+      <div class="rail rail-moto" id="motoRail">
+        <div class="rail-sticky">
+          <div class="rail-bar">
+            <span class="rail-hint"><svg class="icon rail-hint-icon" aria-hidden="true"><use href="#i-arrow"/></svg><span data-fr="Faites défiler ou utilisez les flèches" data-ar="اسحب المجموعة أو استعمل الأسهم">Faites défiler ou utilisez les flèches</span></span>
+            <span class="rail-meta">
+              <span class="rail-nav">
+                <button class="rail-nav-btn is-prev" type="button" id="motoRailPrev" aria-label="Précédent" data-fr-aria="Moto précédente" data-ar-aria="الدراجة السابقة"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+                <button class="rail-nav-btn" type="button" id="motoRailNext" aria-label="Suivant" data-fr-aria="Moto suivante" data-ar-aria="الدراجة التالية"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </span>
+              <span class="rail-counter"><b id="motoRailIndex">01</b><i>/</i><span id="motoRailTotal">13</span></span>
+            </span>
+          </div>
+          <div class="rail-viewport"><div class="rail-track" id="motoGrid"></div></div>
+          <div class="rail-progress" aria-hidden="true"><span id="motoRailProgress"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section maison on-light" id="maison">
+      <div class="container">
+        <div class="maison-grid">
+          <div class="maison-copy reveal">
+            <span class="eyebrow" data-fr="03 — La Maison" data-ar="03 — المعرض">03 — La Maison</span>
+            <h2 class="display" data-fr-html="PLUS QU'UN<br>SHOWROOM.<br><span class='gold-word'>UNE MAISON.</span>" data-ar-html="أكثر من معرض.<br><span class='gold-word'>إنها دار.</span>">PLUS QU'UN<br>SHOWROOM.<br><span class="gold-word">UNE MAISON.</span></h2>
+            <p class="lead" data-fr="Depuis 2014, Gears DZ sélectionne les mécaniques les plus désirables et les entoure d'un service à la hauteur : inspection, financement, immatriculation, livraison et entretien. Un seul interlocuteur, de la première clé à la suivante." data-ar="منذ 2014، تختار Gears DZ أكثر المحركات جاذبية وتحيطها بخدمة تليق بها: الفحص، التمويل، الترقيم، التوصيل والصيانة. متحدث واحد معك، من المفتاح الأول إلى التالي.">Depuis 2014, Gears DZ sélectionne les mécaniques les plus désirables et les entoure d'un service à la hauteur : inspection, financement, immatriculation, livraison et entretien. Un seul interlocuteur, de la première clé à la suivante.</p>
+            <blockquote class="founder-quote">
+              <p data-fr="« On ne vend pas des voitures. On transmet une passion. »" data-ar="«نحن لا نبيع سيارات. نحن ننقل شغفًا.»">« On ne vend pas des voitures. On transmet une passion. »</p>
+              <footer><span>Amine Belkacem</span><small data-fr="Fondateur — Gears DZ" data-ar="المؤسس — Gears DZ">Fondateur — Gears DZ</small></footer>
+            </blockquote>
+            <a class="btn btn-dark" href="#contact"><span data-fr="Visiter le showroom" data-ar="زيارة المعرض">Visiter le showroom</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="maison-visual reveal">
+            <div class="visual-frame">
+              <img src="assets/img/audi-rs6.jpg" alt="Audi RS6 Avant grise, vue trois quarts avant" width="1400" height="927" loading="lazy" decoding="async" data-fr-alt="Audi RS6 Avant grise, vue trois quarts avant" data-ar-alt="Audi RS6 Avant رمادية، منظر أمامي جانبي">
+            </div>
+            <div class="visual-badge">
+              <strong>150</strong>
+              <span data-fr="points d'inspection" data-ar="نقطة فحص">points d'inspection</span>
+            </div>
+            <span class="visual-vertical" data-fr="Depuis 2014" data-ar="منذ 2014">Depuis 2014</span>
+          </div>
+        </div>
+
+        <div class="services" id="services">
+          <article class="service reveal">
+            <div class="service-top"><span>01</span><svg class="icon"><use href="#i-shield"/></svg></div>
+            <h3 data-fr="Inspection 150 points" data-ar="فحص 150 نقطة">Inspection 150 points</h3>
+            <p data-fr="Contrôle mécanique, esthétique et historique avant chaque livraison." data-ar="فحص ميكانيكي وجمالي وتاريخي قبل كل تسليم.">Contrôle mécanique, esthétique et historique avant chaque livraison.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service-top"><span>02</span><svg class="icon"><use href="#i-key"/></svg></div>
+            <h3 data-fr="Garantie 24 mois" data-ar="ضمان 24 شهرًا">Garantie 24 mois</h3>
+            <p data-fr="Pièces et main-d'œuvre, dans notre réseau agréé à travers le pays." data-ar="قطع الغيار والعمالة، عبر شبكتنا المعتمدة في كل الولايات.">Pièces et main-d'œuvre, dans notre réseau agréé à travers le pays.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service-top"><span>03</span><svg class="icon"><use href="#i-card"/></svg></div>
+            <h3 data-fr="Financement sur mesure" data-ar="تمويل حسب الطلب">Financement sur mesure</h3>
+            <p data-fr="Apport flexible, durée de 12 à 60 mois, réponse rapide et transparente." data-ar="دفعة أولى مرنة، مدة من 12 إلى 60 شهرًا، ورد سريع وشفاف.">Apport flexible, durée de 12 à 60 mois, réponse rapide et transparente.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service-top"><span>04</span><svg class="icon"><use href="#i-truck"/></svg></div>
+            <h3 data-fr="Livraison 58 wilayas" data-ar="توصيل 58 ولاية">Livraison 58 wilayas</h3>
+            <p data-fr="Transport fermé, assuré et suivi jusqu'à votre porte." data-ar="نقل مغلق ومؤمّن ومتابع حتى باب منزلك.">Transport fermé, assuré et suivi jusqu'à votre porte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section finance" id="financement">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow" data-fr="04 — Financement" data-ar="04 — التمويل">04 — Financement</span>
+            <h2 class="display" data-fr-html="VOTRE PROCHAIN VOLANT,<br>À VOTRE RYTHME." data-ar-html="مقودك القادم،<br>على إيقاعك.">VOTRE PROCHAIN VOLANT,<br>À VOTRE RYTHME.</h2>
+          </div>
+          <div class="section-intro">
+            <p data-fr="Simulez votre mensualité en quelques secondes. Nos conseillers affinent ensuite l'offre selon votre profil." data-ar="احسب قسطك الشهري في ثوانٍ. ثم يصقل مستشارونا العرض حسب ملفك.">Simulez votre mensualité en quelques secondes. Nos conseillers affinent ensuite l'offre selon votre profil.</p>
+          </div>
+        </div>
+
+        <div class="finance-grid reveal">
+          <div class="finance-controls">
+            <label class="field-label" for="financeVehicle" data-fr="Véhicule" data-ar="السيارة">Véhicule</label>
+            <div class="select-wrap">
+              <select id="financeVehicle" class="select"></select>
+              <svg class="icon select-icon"><use href="#i-chevron-right"/></svg>
+            </div>
+            <div class="finance-price-line">
+              <span data-fr="Prix du véhicule" data-ar="سعر السيارة">Prix du véhicule</span>
+              <strong id="financePrice">—</strong>
+            </div>
+
+            <div class="range-head">
+              <label class="field-label" for="apportRange" data-fr="Apport" data-ar="الدفعة الأولى">Apport</label>
+              <output id="apportValue" for="apportRange">20 %</output>
+            </div>
+            <input class="range" type="range" id="apportRange" min="10" max="50" step="5" value="20" aria-label="Pourcentage d'apport" data-fr-aria="Pourcentage d'apport" data-ar-aria="نسبة الدفعة الأولى">
+            <div class="range-scale"><span>10 %</span><span>50 %</span></div>
+
+            <span class="field-label duration-label" data-fr="Durée" data-ar="المدة">Durée</span>
+            <div class="duration-group" id="durationGroup" role="group" aria-label="Durée du financement" data-fr-aria="Durée du financement" data-ar-aria="مدة التمويل"></div>
+
+            <p class="finance-fine" data-fr="Taux annuel fixe 5,9 % · Offre indicative, sous réserve d'acceptation. Assurance et frais de dossier non inclus." data-ar="معدل سنوي ثابت 5.9% · عرض إرشادي، رهن الموافقة. التأمين ومصاريف الملف غير مشمولين.">Taux annuel fixe 5,9 % · Offre indicative, sous réserve d'acceptation. Assurance et frais de dossier non inclus.</p>
+          </div>
+
+          <div class="finance-result">
+            <div class="finance-result-glow" aria-hidden="true"></div>
+            <span class="eyebrow dark-gold" data-fr="Mensualité estimée" data-ar="القسط الشهري التقديري">Mensualité estimée</span>
+            <div class="monthly-row">
+              <div class="monthly"><span class="amount" id="monthlyValue">—</span><span class="monthly-unit"><span data-fr="DA / mois" data-ar="دج / شهر">DA / mois</span></span></div>
+              <div class="finance-dial" aria-hidden="true">
+                <svg viewBox="0 0 160 92">
+                  <path class="dial-track" d="M14 84 A66 66 0 0 1 146 84"/>
+                  <path class="dial-ticks" d="M14 84 A66 66 0 0 1 146 84"/>
+                  <g class="dial-needle" id="dialNeedle"><line x1="80" y1="84" x2="80" y2="30"/></g>
+                  <circle class="dial-hub" cx="80" cy="84" r="4.5"/>
+                </svg>
+                <span class="dial-caption" data-fr="Ratio financé" data-ar="نسبة التمويل">Ratio financé</span>
+              </div>
+            </div>
+            <div class="finance-bar" aria-hidden="true"><span class="bar-apport" id="barApport"></span><span class="bar-financed" id="barFinanced"></span></div>
+            <div class="bar-legend">
+              <span><i class="dot-gold"></i><span data-fr="Apport" data-ar="الدفعة الأولى">Apport</span> <b id="financeApport">—</b></span>
+              <span><i class="dot-ink"></i><span data-fr="Financé" data-ar="الممول">Financé</span> <b id="financeFinanced">—</b></span>
+            </div>
+            <div class="finance-breakdown">
+              <div><span data-fr="Prix du véhicule" data-ar="سعر السيارة">Prix du véhicule</span><b id="financeTotalPrice">—</b></div>
+              <div><span data-fr="Coût total du crédit" data-ar="التكلفة الإجمالية للتمويل">Coût total du crédit</span><b id="financeInterest">—</b></div>
+              <div><span data-fr="Total à payer" data-ar="الإجمالي">Total à payer</span><b id="financeGrandTotal">—</b></div>
+            </div>
+            <button class="btn btn-dark finance-cta" type="button" id="financeCta"><span data-fr="Recevoir cette offre" data-ar="اطلب هذا العرض">Recevoir cette offre</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coverage on-light" id="livraison">
+      <div class="container coverage-grid">
+        <div class="coverage-copy reveal">
+          <span class="eyebrow" data-fr="05 — Livraison" data-ar="05 — التوصيل">05 — Livraison</span>
+          <h2 class="display" data-fr-html="L'ALGÉRIE,<br>NOTRE TERRAIN." data-ar-html="الجزائر،<br>ميداننا.">L'ALGÉRIE,<br>NOTRE TERRAIN.</h2>
+          <p class="lead" data-fr="De Hydra à Tamanrasset, chaque véhicule voyage dans un transport fermé, assuré porte-à-porte. Les documents suivent. Vous n'avez plus qu'à tourner la clé." data-ar="من حيدرة إلى تمنراست، تسافر كل سيارة في نقل مغلق ومؤمّن من الباب إلى الباب. الوثائق ترافقها. لم يبقَ لك سوى إدارة المفتاح.">De Hydra à Tamanrasset, chaque véhicule voyage dans un transport fermé, assuré porte-à-porte. Les documents suivent. Vous n'avez plus qu'à tourner la clé.</p>
+
+          <div class="delivery-tool">
+            <label class="field-label" for="wilayaSelect" data-fr="Votre wilaya" data-ar="ولايتك">Votre wilaya</label>
+            <div class="select-wrap light">
+              <select id="wilayaSelect" class="select light-select"></select>
+              <svg class="icon select-icon"><use href="#i-chevron-right"/></svg>
+            </div>
+            <div class="delivery-result" id="deliveryResult" aria-live="polite">
+              <svg class="icon"><use href="#i-pin"/></svg>
+              <div>
+                <strong data-fr="Choisissez votre wilaya." data-ar="اختر ولايتك.">Choisissez votre wilaya.</strong>
+                <p data-fr="Nous estimerons votre délai de livraison." data-ar="سنقدّر لك مدة التوصيل.">Nous estimerons votre délai de livraison.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="check-list">
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-fr="Transport fermé et assuré" data-ar="نقل مغلق ومؤمّن">Transport fermé et assuré</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-fr="Documents et immatriculation inclus" data-ar="الوثائق والترقيم مشمولان">Documents et immatriculation inclus</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-fr="Suivi personnalisé jusqu'à la remise" data-ar="متابعة شخصية حتى التسليم">Suivi personnalisé jusqu'à la remise</span></li>
+          </ul>
+
+          <div class="board" aria-hidden="true">
+            <div class="board-head"><span class="board-led"></span><span data-fr="Départs — livraison" data-ar="انطلاقات — التوصيل">Départs — livraison</span><span>GEARS DZ · 58 W</span></div>
+            <div class="board-rows" id="boardRows"></div>
+          </div>
+        </div>
+
+        <div class="coverage-visual reveal">
+          <span class="map-watermark" aria-hidden="true">58</span>
+          <div class="map-wrap">
+            <svg class="dz-map" viewBox="0 0 640 600" role="img" aria-labelledby="dzMapTitle">
+              <title id="dzMapTitle">Algérie — 58 wilayas livrées</title>
+              <defs><linearGradient id="mapFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".11"/><stop offset="1" stop-color="currentColor" stop-opacity=".02"/></linearGradient></defs>
+              <path class="dz-outline" d="M616,441.09 L517.93,499.34 L435.06,559.38 L394.70,573.01 L362.95,576 L362.62,556.56 L349.37,551.58 L331.55,542.84 L324.74,528.52 L228.19,461.84 L131.65,395.15 L24,321.15 L24.55,315.23 L24.54,313.19 L24.29,276.97 L70.51,254.42 L99.10,249.76 L122.52,241.55 L133.47,226.24 L166.93,214.15 L168.16,191.52 L184.72,188.85 L197.67,177.55 L235.12,172.40 L240.37,160.52 L232.83,154.03 L222.94,121.76 L221.24,103.17 L210.45,83.60 L237.97,66.90 L268.91,61.58 L286.98,48.97 L314.54,39.67 L363.05,34.22 L410.39,31.74 L424.83,36.28 L451.78,24.24 L482.36,24 L494.00,31.11 L513.58,29.26 L507.76,44.94 L512.30,74.08 L505.56,99.28 L487.92,116.33 L490.44,139.35 L513.85,157.56 L514.10,164.96 L531.74,177.29 L543.95,232.16 L553.21,259.14 L554.76,273.35 L549.72,298.28 L551.79,312.21 L548.15,328.94 L550.65,348.16 L539.29,360.93 L556.22,383.21 L557.29,396.30 L567.47,413.34 L580.85,407.75 L603.44,421.95 L616,441.09 Z" fill="url(#mapFill)" />
+              <path class="dz-route" d="M360.11 35.14 Q 307.15 64.29 254.19 67.44" />
+              <path class="dz-route" d="M360.11 35.14 Q 411 53.08 461.88 47.03" />
+              <path class="dz-route" d="M360.11 35.14 Q 427.48 48.9 494.85 30.67" />
+              <path class="dz-route" d="M360.11 35.14 Q 393.81 51.74 427.51 52.34" />
+              <path class="dz-route" d="M360.11 35.14 Q 368.9 102.28 377.7 165.43" />
+              <path class="dz-route" d="M360.11 35.14 Q 392.42 116.55 424.73 181.96" />
+              <path class="dz-route" d="M360.11 35.14 Q 284.61 131.65 209.11 192.15" />
+              <path class="dz-route" d="M360.11 35.14 Q 395.37 256.6 430.63 462.07" />
+              <circle class="dz-dot dz-dot-main" cx="360.11" cy="35.14" r="7"><title>Alger / الجزائر</title></circle>
+              <circle class="dz-dot" cx="254.19" cy="67.44" r="4.2"><title>Oran / وهران</title></circle>
+              <circle class="dz-dot" cx="461.88" cy="47.03" r="4.2"><title>Constantine / قسنطينة</title></circle>
+              <circle class="dz-dot" cx="494.85" cy="30.67" r="4.2"><title>Annaba / عنابة</title></circle>
+              <circle class="dz-dot" cx="427.51" cy="52.34" r="4.2"><title>Sétif / سطيف</title></circle>
+              <circle class="dz-dot" cx="377.7" cy="165.43" r="4.2"><title>Ghardaïa / غرداية</title></circle>
+              <circle class="dz-dot" cx="424.73" cy="181.96" r="4.2"><title>Ouargla / ورقلة</title></circle>
+              <circle class="dz-dot" cx="209.11" cy="192.15" r="4.2"><title>Béchar / بشار</title></circle>
+              <circle class="dz-dot" cx="430.63" cy="462.07" r="4.2"><title>Tamanrasset / تمنراست</title></circle>
+            </svg>
+            <div class="map-cities">
+              <span><i></i>Alger</span>
+              <span><i></i>Oran</span>
+              <span><i></i>Constantine</span>
+              <span><i></i>Tamanrasset</span>
+            </div>
+          </div>
+          <div class="map-caption">
+            <strong>58</strong>
+            <span data-fr="wilayas livrées. Une seule adresse." data-ar="ولاية نوصل إليها. عنوان واحد.">wilayas livrées. Une seule adresse.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof" aria-label="Avis clients" data-fr-aria="Avis clients" data-ar-aria="آراء العملاء">
+      <div class="container quote-wrap">
+        <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span data-fr="4,9/5 · 120 avis vérifiés" data-ar="4.9/5 · 120 تقييمًا موثوقًا">4,9/5 · 120 avis vérifiés</span></div>
+        <blockquote id="quoteText">« Le service d'un grand concessionnaire, la proximité d'un ami. Ma M4 est arrivée à Oran en cinq jours, impeccable. »</blockquote>
+        <div class="quote-meta"><span id="quoteName">Yacine B. — Oran</span><span class="meta-dot"></span><span id="quoteCar">BMW M4 Competition</span></div>
+        <div class="quote-controls">
+          <button class="icon-btn" type="button" id="quotePrev" aria-label="Avis précédent" data-fr-aria="Avis précédent" data-ar-aria="الرأي السابق"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+          <div class="quote-dots" id="quoteDots"></div>
+          <button class="icon-btn" type="button" id="quoteNext" aria-label="Avis suivant" data-fr-aria="Avis suivant" data-ar-aria="الرأي التالي"><svg class="icon icon-rail"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq on-light" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="eyebrow" data-fr="06 — Questions" data-ar="06 — الأسئلة">06 — Questions</span>
+          <h2 class="display" data-fr-html="LES RÉPONSES<br>AVANT LA CLÉ." data-ar-html="الأجوبة<br>قبل المفتاح.">LES RÉPONSES<br>AVANT LA CLÉ.</h2>
+          <p class="lead" data-fr="Une question sur un modèle, un délai ou un financement ? Notre équipe répond en moins de 24h." data-ar="سؤال عن موديل أو مدة أو تمويل؟ فريقنا يجيب في أقل من 24 ساعة.">Une question sur un modèle, un délai ou un financement ? Notre équipe répond en moins de 24h.</p>
+          <div class="support-card">
+            <div class="support-icon"><svg class="icon"><use href="#i-phone"/></svg></div>
+            <div>
+              <span data-fr="Parler à un conseiller" data-ar="تحدث إلى مستشار">Parler à un conseiller</span>
+              <a href="tel:+213561248890">+213 561 24 88 90</a>
+            </div>
+          </div>
+          <a class="btn btn-outline-dark btn-sm" href="#contact"><span data-fr="Poser une question" data-ar="اطرح سؤالًا">Poser une question</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="faq-list reveal" id="faqList">
+          <details name="faq">
+            <summary><span data-fr="Les véhicules sont-ils neufs ou d'occasion ?" data-ar="هل السيارات جديدة أم مستعملة؟">Les véhicules sont-ils neufs ou d'occasion ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Nous proposons des véhicules neufs importés sur commande et des occasions certifiées, toutes inspectées sur 150 points. Chaque fiche précise l'état, l'année et le kilométrage." data-ar="نوفر سيارات جديدة مستوردة حسب الطلب وسيارات مستعملة معتمدة، جميعها مفحوصة على 150 نقطة. كل بطاقة توضح الحالة والسنة وعدد الكيلومترات.">Nous proposons des véhicules neufs importés sur commande et des occasions certifiées, toutes inspectées sur 150 points. Chaque fiche précise l'état, l'année et le kilométrage.</p>
+          </details>
+          <details name="faq">
+            <summary><span data-fr="Quels sont les délais de livraison ?" data-ar="ما هي مدة التسليم؟">Quels sont les délais de livraison ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Un véhicule en stock est livré sous 72h à Alger et 3 à 5 jours dans le Nord. Une commande sur mesure demande 4 à 8 semaines selon le modèle et la provenance." data-ar="السيارة المتوفرة تُسلَّم خلال 72 ساعة في الجزائر العاصمة و3 إلى 5 أيام في الشمال. الطلب الخاص يستغرق من 4 إلى 8 أسابيع حسب الموديل والمنشأ.">Un véhicule en stock est livré sous 72h à Alger et 3 à 5 jours dans le Nord. Une commande sur mesure demande 4 à 8 semaines selon le modèle et la provenance.</p>
+          </details>
+          <details name="faq">
+            <summary><span data-fr="Puis-je financer mon achat ?" data-ar="هل يمكنني تمويل شرائي؟">Puis-je financer mon achat ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Oui. Nous travaillons avec des partenaires bancaires et proposons des solutions de 12 à 60 mois, avec un apport à partir de 10 %. Le simulateur donne une première estimation." data-ar="نعم. نعمل مع شركاء مصرفيين ونقترح حلولًا من 12 إلى 60 شهرًا، بدفعة أولى تبدأ من 10%. المحاكي يمنحك تقديرًا أوليًا.">Oui. Nous travaillons avec des partenaires bancaires et proposons des solutions de 12 à 60 mois, avec un apport à partir de 10 %. Le simulateur donne une première estimation.</p>
+          </details>
+          <details name="faq">
+            <summary><span data-fr="La garantie est-elle valable partout en Algérie ?" data-ar="هل الضمان صالح في كل الجزائر؟">La garantie est-elle valable partout en Algérie ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Oui, notre garantie de 24 mois est honorée dans notre réseau agréé. Pour les véhicules importés, nous gérons également les pièces et l'entretien." data-ar="نعم، ضماننا لمدة 24 شهرًا ساري في شبكتنا المعتمدة. بالنسبة للسيارات المستوردة، نتكفل أيضًا بقطع الغيار والصيانة.">Oui, notre garantie de 24 mois est honorée dans notre réseau agréé. Pour les véhicules importés, nous gérons également les pièces et l'entretien.</p>
+          </details>
+          <details name="faq">
+            <summary><span data-fr="Reprenez-vous mon véhicule actuel ?" data-ar="هل تستبدلون سيارتي الحالية؟">Reprenez-vous mon véhicule actuel ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Absolument. Envoyez-nous les informations et photos de votre véhicule : nous vous proposons une estimation gratuite sous 48h, déductible de votre prochain achat." data-ar="بالتأكيد. أرسل لنا معلومات وصور سيارتك: نقدم لك تقديرًا مجانيًا خلال 48 ساعة، يُخصم من شرائك القادم.">Absolument. Envoyez-nous les informations et photos de votre véhicule : nous vous proposons une estimation gratuite sous 48h, déductible de votre prochain achat.</p>
+          </details>
+          <details name="faq">
+            <summary><span data-fr="Peut-on essayer un véhicule avant l'achat ?" data-ar="هل يمكن تجربة السيارة قبل الشراء؟">Peut-on essayer un véhicule avant l'achat ?</span><i class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></i></summary>
+            <p data-fr="Oui, sur rendez-vous à notre showroom d'Hydra. Pour les wilayas éloignées, nous organisons des essais lors de nos tournées de livraison." data-ar="نعم، بموعد في معرضنا بحيدرة. للولايات البعيدة، ننظم تجارب خلال جولات التسليم.">Oui, sur rendez-vous à notre showroom d'Hydra. Pour les wilayas éloignées, nous organisons des essais lors de nos tournées de livraison.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-bg-word" aria-hidden="true">GEARS</div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="eyebrow" data-fr="07 — Contact" data-ar="07 — اتصل بنا">07 — Contact</span>
+            <h2 class="display" data-fr-html="PRENEZ<br>LE VOLANT." data-ar-html="خُذ<br>المقود.">PRENEZ<br>LE VOLANT.</h2>
+            <p class="lead" data-fr="Un essai, une offre de reprise ou un simple conseil ? Écrivez-nous. Un conseiller vous répond sous 24h ouvrées." data-ar="تجربة قيادة، عرض استبدال أو مجرد نصيحة؟ اكتب لنا. سيرد عليك مستشار خلال 24 ساعة عمل.">Un essai, une offre de reprise ou un simple conseil ? Écrivez-nous. Un conseiller vous répond sous 24h ouvrées.</p>
+
+            <div class="contact-blocks">
+              <div class="contact-block">
+                <span class="contact-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+                <div>
+                  <small data-fr="Showroom" data-ar="المعرض">Showroom</small>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Hydra%2C+Alger" target="_blank" rel="noopener" data-fr="12, rue des Frères Benhafid, Hydra, Alger" data-ar="12، شارع الإخوة بن حفيد، حيدرة، الجزائر العاصمة">12, rue des Frères Benhafid, Hydra, Alger</a>
+                </div>
+              </div>
+              <div class="contact-block">
+                <span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+                <div>
+                  <small data-fr="Téléphone & WhatsApp" data-ar="الهاتف وواتساب">Téléphone &amp; WhatsApp</small>
+                  <a href="tel:+213561248890">+213 561 24 88 90</a>
+                </div>
+              </div>
+              <div class="contact-block">
+                <span class="contact-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+                <div>
+                  <small data-fr="Email" data-ar="البريد الإلكتروني">Email</small>
+                  <a href="mailto:contact@gears-dz.com">contact@gears-dz.com</a>
+                </div>
+              </div>
+              <div class="contact-block">
+                <span class="contact-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+                <div>
+                  <small data-fr="Horaires" data-ar="أوقات العمل">Horaires</small>
+                  <span data-fr="Sam – Jeu : 09h00 – 19h00 · Ven : 14h00 – 19h00" data-ar="السبت – الخميس: 09:00 – 19:00 · الجمعة: 14:00 – 19:00">Sam – Jeu : 09h00 – 19h00 · Ven : 14h00 – 19h00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="socials">
+              <a href="https://www.instagram.com/gearsdz" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+              <a href="https://www.facebook.com/gearsdz" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+              <a href="https://www.youtube.com/@gearsdz" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+              <a href="https://wa.me/213561248890" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+            </div>
+          </div>
+
+          <div class="form-panel reveal">
+            <form id="enquiryForm" novalidate>
+              <div class="form-head">
+                <div class="form-doc">
+                  <span class="doc-mark">GEARS DZ</span>
+                  <span class="doc-ref"><i data-fr="Réf." data-ar="المرجع">Réf.</i> <b id="docRef">GDZ-000000-0000</b></span>
+                </div>
+                <span class="micro" data-fr="Fiche de demande — réponse sous 24h ouvrées" data-ar="بطاقة طلب — رد خلال 24 ساعة عمل">Fiche de demande — réponse sous 24h ouvrées</span>
+                <h3 data-fr="Votre demande, noir sur blanc." data-ar="طلبك، مكتوب بالأبيض والأسود.">Votre demande, noir sur blanc.</h3>
+                <p class="form-sub" data-fr="Renseignez les six champs ci-dessous. Nous vous rappelons avec un devis ferme, le délai exact de livraison et les options disponibles." data-ar="املأ الحقول الستة أدناه. نتصل بك بعرض سعر نهائي، ومدة تسليم دقيقة، والخيارات المتوفرة.">Renseignez les six champs ci-dessous. Nous vous rappelons avec un devis ferme, le délai exact de livraison et les options disponibles.</p>
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="fullName" data-fr="Nom complet" data-ar="الاسم الكامل">Nom complet</label>
+                  <input id="fullName" name="fullName" type="text" autocomplete="name" required data-fr-ph="Votre nom" data-ar-ph="اسمك" placeholder="Votre nom">
+                  <span class="field-error" data-error-for="fullName"></span>
+                </div>
+                <div class="field">
+                  <label for="phone" data-fr="Téléphone" data-ar="الهاتف">Téléphone</label>
+                  <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required data-fr-ph="05 XX XX XX XX" data-ar-ph="05 XX XX XX XX" placeholder="05 XX XX XX XX">
+                  <span class="field-error" data-error-for="phone"></span>
+                </div>
+                <div class="field">
+                  <label for="vehicleSelect" data-fr="Véhicule souhaité" data-ar="السيارة المطلوبة">Véhicule souhaité</label>
+                  <div class="select-wrap light">
+                    <select id="vehicleSelect" name="vehicle"></select>
+                    <svg class="icon select-icon"><use href="#i-chevron-right"/></svg>
+                  </div>
+                  <span class="field-error" data-error-for="vehicleSelect"></span>
+                </div>
+                <div class="field">
+                  <label for="requestType" data-fr="Type de demande" data-ar="نوع الطلب">Type de demande</label>
+                  <div class="select-wrap light">
+                    <select id="requestType" name="requestType" required></select>
+                    <svg class="icon select-icon"><use href="#i-chevron-right"/></svg>
+                  </div>
+                  <span class="field-error" data-error-for="requestType"></span>
+                </div>
+                <div class="field">
+                  <label for="contactWilaya" data-fr="Wilaya" data-ar="الولاية">Wilaya</label>
+                  <div class="select-wrap light">
+                    <select id="contactWilaya" name="wilaya" required></select>
+                    <svg class="icon select-icon"><use href="#i-chevron-right"/></svg>
+                  </div>
+                  <span class="field-error" data-error-for="contactWilaya"></span>
+                </div>
+                <div class="field">
+                  <label for="preferredDate" data-fr="Date souhaitée (facultatif)" data-ar="التاريخ المطلوب (اختياري)">Date souhaitée (facultatif)</label>
+                  <input id="preferredDate" name="date" type="date">
+                </div>
+                <div class="field field-full">
+                  <label for="message" data-fr="Message (facultatif)" data-ar="رسالة (اختياري)">Message (facultatif)</label>
+                  <textarea id="message" name="message" rows="3" data-fr-ph="Parlez-nous de votre projet…" data-ar-ph="حدثنا عن مشروعك…" placeholder="Parlez-nous de votre projet…"></textarea>
+                </div>
+                <div class="field field-full consent-field">
+                  <label class="check-label" for="consent">
+                    <input type="checkbox" id="consent" name="consent">
+                    <span class="check-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+                    <span data-fr="J'accepte d'être contacté par Gears DZ au sujet de ma demande." data-ar="أوافق على أن تتواصل معي Gears DZ بخصوص طلبي.">J'accepte d'être contacté par Gears DZ au sujet de ma demande.</span>
+                  </label>
+                  <span class="field-error" data-error-for="consent"></span>
+                </div>
+              </div>
+              <div class="form-recap" id="formRecap">
+                <div class="recap-head">
+                  <span data-fr="Récapitulatif" data-ar="ملخّص الطلب">Récapitulatif</span>
+                  <span class="recap-hint" data-fr="Mis à jour automatiquement" data-ar="يُحدَّث تلقائيًا">Mis à jour automatiquement</span>
+                </div>
+                <dl class="recap-rows" id="recapRows"></dl>
+              </div>
+              <button class="btn btn-gold form-submit" type="submit"><span data-fr="Préparer ma demande" data-ar="جهّز طلبي">Préparer ma demande</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></button>
+              <p class="form-note" data-fr="En continuant, vous serez redirigé vers WhatsApp avec votre demande pré-remplie." data-ar="بالاستمرار، ستُحوَّل إلى واتساب مع طلبك معبأ مسبقًا.">En continuant, vous serez redirigé vers WhatsApp avec votre demande pré-remplie.</p>
+            </form>
+
+            <div class="form-success" id="formSuccess" hidden>
+              <div class="success-icon"><svg class="icon"><use href="#i-check"/></svg></div>
+              <span class="micro" data-fr="Demande prête" data-ar="الطلب جاهز">Demande prête</span>
+              <h3 data-fr="Votre demande est prête." data-ar="طلبك جاهز.">Votre demande est prête.</h3>
+              <p id="successSummary"></p>
+              <a class="btn btn-gold" id="waSend" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg><span data-fr="Ouvrir WhatsApp" data-ar="افتح واتساب">Ouvrir WhatsApp</span></a>
+              <button class="text-link" type="button" id="newRequest"><span data-fr="Nouvelle demande" data-ar="طلب جديد">Nouvelle demande</span><svg class="icon icon-arrow"><use href="#i-arrow"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#accueil">
+            <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="20" cy="20" r="10.5"/><path d="M20 3.5v6M20 30.5v6M3.5 20h6M30.5 20h6M8.3 8.3l4.2 4.2M27.5 27.5l4.2 4.2M31.7 8.3l-4.2 4.2M12.5 27.5l-4.2 4.2"/></g><circle cx="20" cy="20" r="3.4" fill="currentColor"/></svg>
+            <span class="brand-word">GEARS<em>DZ</em></span>
+          </a>
+          <p data-fr="L'automobile d'exception, au cœur de l'Algérie." data-ar="السيارات الاستثنائية، في قلب الجزائر.">L'automobile d'exception, au cœur de l'Algérie.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/gearsdz" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+            <a href="https://www.facebook.com/gearsdz" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+            <a href="https://www.youtube.com/@gearsdz" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+            <a href="https://wa.me/213561248890" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Explorer" data-ar="استكشف">Explorer</h4>
+          <a href="#collection" data-fr="Collection" data-ar="المجموعة">Collection</a>
+          <a href="#motos" data-fr="Motos" data-ar="الدراجات">Motos</a>
+          <a href="#maison" data-fr="La Maison" data-ar="المعرض">La Maison</a>
+          <a href="#financement" data-fr="Financement" data-ar="التمويل">Financement</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Services" data-ar="الخدمات">Services</h4>
+          <a href="#livraison" data-fr="Livraison 58 wilayas" data-ar="توصيل 58 ولاية">Livraison 58 wilayas</a>
+          <a href="#faq" data-fr="Garantie" data-ar="الضمان">Garantie</a>
+          <a href="#contact" data-prefill-type="Essai" data-fr="Essai routier" data-ar="تجربة قيادة">Essai routier</a>
+          <a href="#contact" data-prefill-type="Reprise" data-fr="Reprise" data-ar="استبدال">Reprise</a>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4 data-fr="Contact" data-ar="اتصل بنا">Contact</h4>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Hydra%2C+Alger" target="_blank" rel="noopener">Hydra, Alger</a>
+          <a href="tel:+213561248890">+213 561 24 88 90</a>
+          <a href="mailto:contact@gears-dz.com">contact@gears-dz.com</a>
+        </div>
+        <div class="footer-news">
+          <h4 data-fr="Le journal Gears" data-ar="مجلة Gears">Le journal Gears</h4>
+          <p data-fr="Nouveaux arrivages, essais et offres privées. Une fois par mois, pas plus." data-ar="وصولات جديدة، تجارب وعروض خاصة. مرة في الشهر، لا أكثر.">Nouveaux arrivages, essais et offres privées. Une fois par mois, pas plus.</p>
+          <form class="newsletter" id="newsletterForm">
+            <label class="sr-only" for="newsletterEmail" data-fr="Votre adresse e-mail" data-ar="بريدك الإلكتروني">Votre adresse e-mail</label>
+            <input type="email" id="newsletterEmail" required data-fr-ph="Votre adresse e-mail" data-ar-ph="بريدك الإلكتروني" placeholder="Votre adresse e-mail">
+            <button type="submit" aria-label="S'inscrire" data-fr-aria="S'inscrire" data-ar-aria="اشترك"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Gears DZ. <span data-fr="Tous droits réservés." data-ar="جميع الحقوق محفوظة.">Tous droits réservés.</span></span>
+        <span><span data-fr="Photos : Wikimedia Commons (CC BY-SA)." data-ar="الصور: ويكيميديا كومنز (CC BY-SA).">Photos : Wikimedia Commons (CC BY-SA).</span> <span data-fr="Conçu à Alger, pour l'Algérie." data-ar="صُمم في الجزائر العاصمة، للجزائر.">Conçu à Alger, pour l'Algérie.</span></span>
+      </div>
+      <div class="footer-band" aria-hidden="true">
+        <div class="footer-band-track">
+          <div class="footer-band-set">
+            <span class="fb-solid">GEARS DZ</span><i>✦</i>
+            <span class="fb-ar">جيرز دي زد</span><i>✦</i>
+            <span>ALGER · 36.75° N</span><i>✦</i>
+            <span class="fb-ar">٥٨ ولاية</span><i>✦</i>
+            <span>LA ROUTE EST UNE SIGNATURE</span><i>✦</i>
+            <span class="fb-ar">الطريق توقيعنا</span><i>✦</i>
+            <span>EST. 2014</span><i>✦</i>
+          </div>
+          <div class="footer-band-set" aria-hidden="true">
+            <span class="fb-solid">GEARS DZ</span><i>✦</i>
+            <span class="fb-ar">جيرز دي زد</span><i>✦</i>
+            <span>ALGER · 36.75° N</span><i>✦</i>
+            <span class="fb-ar">٥٨ ولاية</span><i>✦</i>
+            <span>LA ROUTE EST UNE SIGNATURE</span><i>✦</i>
+            <span class="fb-ar">الطريق توقيعنا</span><i>✦</i>
+            <span>EST. 2014</span><i>✦</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="vehicle-dialog" id="vehicleDialog" aria-labelledby="vdTitle">
+    <button class="vd-close" type="button" id="vdClose" aria-label="Fermer" data-fr-aria="Fermer" data-ar-aria="أغلق"><svg class="icon"><use href="#i-close"/></svg></button>
+    <div id="vdContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="icon"><use href="#i-check"/></svg>
+    <span id="toastText"></span>
+  </div>
+
+  <a class="whatsapp-fab" href="https://wa.me/213561248890?text=Bonjour%20Gears%20DZ%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" data-fr-aria="Discuter sur WhatsApp" data-ar-aria="اتحدث على واتساب">
+    <svg class="icon"><use href="#i-whatsapp"/></svg>
+  </a>
+  <button class="to-top" id="toTop" type="button" aria-label="Retour en haut" data-fr-aria="Retour en haut" data-ar-aria="العودة إلى الأعلى"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+
+  <noscript>
+    <div class="noscript">Gears DZ — Hydra, Alger. Téléphone : +213 561 24 88 90. Activez JavaScript pour explorer la collection.</div>
+  </noscript>
+
+  <script src="assets/js/app.js?v=5" defer></script>
+</body>
+</html>

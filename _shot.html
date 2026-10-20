@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>shot</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #080a08; }
+  iframe { display: block; width: 100vw; height: 100vh; border: 0; }
+</style>
+</head>
+<body>
+<iframe id="f" src="index.html"></iframe>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var sel = params.get("sel") || "";
+    var off = Number(params.get("off") || 0);
+    var frame = document.getElementById("f");
+
+    function prepare(doc, win) {
+      doc.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+      doc.querySelectorAll("img").forEach(function (img) {
+        img.loading = "eager";
+        img.decoding = "sync";
+      });
+      doc.querySelectorAll(".car-card, .moto-card").forEach(function (card) {
+        card.classList.add("card-settled", "is-live");
+      });
+      doc.querySelectorAll(".counter").forEach(function (el) { el.classList.add("is-visible"); });
+      try { win.dispatchEvent(new Event("scroll")); } catch (e) {}
+    }
+
+    function run() {
+      var win = frame.contentWindow;
+      var doc = win.document;
+      prepare(doc, win);
+
+      if (sel.indexOf("ar") === 0) {
+        var langBtn = doc.querySelector('.lang-btn[data-lang="ar"]');
+        if (langBtn) langBtn.click();
+        var arSel = sel.split(":")[1] || "#collection";
+        var arOff = Number(params.get("off") || 0);
+        setTimeout(function () {
+          prepare(doc, win);
+          var target2 = doc.querySelector(arSel);
+          if (target2) win.scrollTo(0, target2.getBoundingClientRect().top + win.scrollY + arOff);
+        }, 600);
+      } else if (sel.indexOf("dialog") === 0 || sel === "motodialog") {
+        var target = sel === "motodialog" ? doc.querySelector("#motoGrid .card-hit") : doc.querySelector("#carGrid .card-hit");
+        if (target) target.click();
+        var num = Number((sel.match(/\d/) || [1])[0]);
+        var dlg = doc.querySelector("#vehicleDialog");
+        if (dlg) {
+          // headless ne capture pas la top-layer : on rejoue le contenu en flux.
+          var clone = doc.createElement("div");
+          clone.className = "vehicle-dialog";
+          clone.setAttribute("open", "");
+          clone.style.cssText =
+            "position:fixed;left:16px;top:16px;width:1080px;height:660px;overflow:auto;background:#faf7ee;color:#080a08;display:block;z-index:99999;margin:0;animation:none";
+          clone.innerHTML = dlg.innerHTML;
+          dlg.remove();
+          doc.body.appendChild(clone);
+          if (num > 1) {
+            var btn = clone.querySelector('.vd-scene[data-scene="' + num + '"]');
+            if (btn) btn.click();
+          }
+        }
+      } else if (sel === "rail-scroll") {
+        var vp = doc.querySelector("#carRail .rail-viewport");
+        if (vp) vp.scrollLeft = off;
+        var el2 = doc.querySelector("#collection");
+        if (el2) win.scrollTo(0, el2.getBoundingClientRect().top + win.scrollY - 70);
+      } else if (sel === "filters") {
+        var fbtn = doc.querySelector('#filters [data-filter="BMW"]');
+        if (fbtn) fbtn.click();
+      } else {
+        var el = sel ? doc.querySelector(sel) : null;
+        if (el) win.scrollTo(0, el.getBoundingClientRect().top + win.scrollY + off);
+        else win.scrollTo(0, off);
+      }
+
+      setTimeout(function () { prepare(doc, win); }, 700);
+      setTimeout(function () { prepare(doc, win); }, 1600);
+    }
+
+    function start() { setTimeout(run, 2700); }
+
+    if (frame.contentWindow && frame.contentWindow.document.readyState === "complete") start();
+    else frame.addEventListener("load", start);
+  })();
+</script>
+</body>
+</html>
